@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .body{
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+            background-color: #271803;
+        }
+        .header{
+            width:100%;
+            height: 10vh;
+            background-color: bisque;
+        }
+        .header_img{
+            width: 10%;
+            height: 10vh;
+            margin-top: 1%;
+            object-fit: cover;
+        }
+        .header_right{
+            display:flex;
+        }
+        .header_left{
+            display: flex;
+            height: 5vh;
+            padding-top: 2%;
+            padding-left:45%;
+        }
+        .header_links{
+            display: flex;
+        }
+        .links{
+            padding-left: 5%;
+            color: #271803;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+        .button{
+            margin-left: 30%;
+        }
+        .button_tag{
+            background-color: #271803;
+            color: azure;
+            height: 70%;
+            border-color: #271803;
+        }
+        .about{
+            background-color: bisque;
+            margin: 0.7% 10% 0% 10%;
+            padding: 2% 0% 5% 5%;
+            display: flex;
+            height: 60vh;
+        }
+        .about_head{
+            margin-top: 0%;
+        }
+        .about_h1 h1{
+            font-size: 3.4rem; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .about_h1 p{
+            font-size: 0.8rem; font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 0;
+        }
+        .image_2{
+            width: 30vw;
+            height: 60vh;
+            object-fit: cover;
+            margin-left: 6vw;
+            border-radius: 5%;
+        }
+        .hello{
+            background-color: #271803;
+            color: bisque;
+            border-color: #271803;
+            width: 10vw;
+            height: 5vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .about_button{
+            display: flex;
+            column-gap: 2cqb;
+            height: 10%;
+            padding-top: 5%;
+            padding-right: 0%;
+        }
+        .about_tag{
+            background-color: rgb(226, 166, 75);
+            width: 10vw;        
+        }
+        .about_tag h4{
+            margin: 0%;
+            padding-top: 3%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            text-align: center;
+            justify-content: center;
+            color: #271803;
+        }
+        .about_tag p{
+            margin: 0%;
+            padding: 0%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.5rem;
+            text-align: center;
+        }
+        .about2{
+            background-color: bisque;
+            margin: 0% 10% 0% 10%;
+            padding: 5% 0% 5% 5%;
+            display: flex;
+            height: 60vh;
+            border-radius: 0% 0% 3% 3%;
+        }
+        .image_1{
+            width: 30vw;
+            height: 60vh;
+            object-fit: cover;
+            margin-right: 6vw;
+            border-radius: 5%;
+        }
+        .icon{
+            margin-left: 22%;
+        }
+        .about2_head{
+            padding-top: 5%;
+        }
+        .about2_head h2{
+             font-size: 2rem; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .about2_head h3{
+            font-size: 2rem; font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .about2_head p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.8rem;
+        }
+        .about2_button{
+            display: flex;
+            column-gap: 2%;
+            padding-top: 5%;
+        }
+        .about2_button1{
+            display: flex;
+            background-color:#cc8f39;
+        }
+        .projectbutton1{
+            background-color: #cc8f39;
+            width: 13vw;
+            height: 8vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #271803;
+            border-color: #cc8f39;
+        }
+        .projectbutton{
+            background-color: #cc8f39;
+            width: 13vw;
+            height: 8vh;
+            display: flex;
+            column-gap: 2%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #271803;
+            border-color: #cc8f39;
+        }
+        .workprocess{
+            background-color: bisque;
+            margin: 0.7% 10% 0% 10%;
+            padding: 2% 5% 2% 5%;
+            display: flex;
+            border-radius: 4%;
+            height: 50vh;
+        }
+        .workprocess_h{
+            margin-top: 10%;
+        }
+        .workprocess_h h2{
+            font-size: 2rem; font-weight: bold; color: #271803;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0% 0% 5% 0%;
+        }
+        .workprocess_h p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.8rem;
+            margin: 0%;
+        }
+        .work_grid{
+            display: flex;
+            gap: 5%;
+            padding-left: 10%;
+        }
+        .workgrid1{
+            display: flex;
+            flex-direction: column;
+            gap: 3%;
+        }
+        .research{
+            background-color: #cc8f39;
+            width: 14vw;
+            border-radius: 3%;
+        }
+        .analyze{
+            background-color: #cc8f39;
+            border-radius: 3%;
+        }
+        .workgrid2{
+            display: flex;
+            flex-direction: column;
+            gap: 3%;
+        }
+        .design{
+            background-color: #cc8f39;
+            width: 14vw;
+            border-radius: 3%;
+        }
+        .launch{
+            background-color: #cc8f39;
+            border-radius: 3%;
+        }
+        .portfolio{
+            background-color: bisque;
+            margin: 0.7% 10% 0% 10%;
+            padding: 2% 0% 2% 0%;
+            border-radius: 3%;
+        }
+        .grid1{
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:20px;
+            padding:0% 2% 0% 2%;
+            margin: 2% 0% 2% 0%;
+        }
+        .grid2{
+           display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:20px;
+            padding:0% 2% 0% 2%;
+        }
+        .grid1_box{
+            border-radius: 3% 3% 3% 3%;
+        }
+        .portfolio1 h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3rem;
+            text-align: center;
+            margin: 0%;
+        }
+        .portfolio1 p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .portfolio_image{
+            width: 100%;
+            height: 235px;
+            object-fit: cover;
+        }
+        .box1 h4{
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0% 0% 0% 3%;
+            padding: 0%;
+            color: bisque;
+        }
+        .box1 p{
+            font-style: italic;
+            font-size: 0.7rem;
+            margin: 0% 0% 0% 3%;
+            color: antiquewhite;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+        }
+        .case_button{
+            padding: 0% 0% 4% 65%;
+        }
+        .casebutton{
+            background-color: #cc8f39;
+            color: #271803;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            height: 5vh;
+            border-style: none;
+            border-radius: 5%;
+        }
+        .more_button{
+            padding: 3% 0% 0% 45%;
+        }
+        .more{
+            background-color: #271803;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 8vh;
+            color: bisque;
+            font-weight: bold;
+            border-radius: 10%;
+            border-style: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jess Damina</title>
+</head>
+<body class="body">
+    <!--Header section-->
+    <header class="header">
+        <div class=" header_right">
+            <img class="header_img" src="./images/logo.png"/>
+            <div class="header_left">
+                <div class="header_links">
+                    <div class="links">
+                        <a href="home.html" style="color:#271803; text-decoration: none;">Home</a>
+                    </div>
+                    <div class="links">
+                        <a href="about.html" style="color:#271803; text-decoration: none;">About</a>
+                    </div>
+                    <div class="links">
+                        <a href="process.html" style="color:#271803; text-decoration: none;">Process</a>
+                    </div>
+                    <div class="links">
+                        <a href="portfolio.html" style="color:#271803; text-decoration: none;">Portfolio</a>
+                    </div>
+                    <div class="links">
+                        <a href="blog.html" style="color:#271803; text-decoration: none;">Blog</a>
+                    </div>
+                    <div class="links">
+                        <a href="servivces.html" style="color:#271803; text-decoration: none;">Services</a>
+                    </div>
+                </div>
+                <div class=button>
+                    <button class="button_tag">Contact</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--About Section-->
+    <div class="about">
+        <div class="about_head">
+            <div class="about_h1">
+                <h1 style="margin: 0%; color: #271803;">Hello, I'm</h1>
+                <h1 style="margin: 0%; color: #271803;">Jess Damina</h1>
+                <p style="margin-top: 5%; color: #271803">I'm a freelancer. I’m a versatile and results-driven</p>
+                <p style="margin-top: 0%; color: #271803">creative professional with over 5 years of experience in</p>
+                <p style="margin-top: 0%; color: #271803">graphic design, video editing, and social media management.</p>
+                <p style="margin-top: 0%; color: #271803">I help brands and businesses tell their stories visually,</p>
+                <p style="margin-top: 0%; color: #271803">connect with their audiences, and stand out</p>
+                <p style="margin-top: 0%; color: #271803"> in today’s fast-paced digital world.</p>
+                <p style="margin-top: 5%; color: #271803">Whether you're launching a new product, looking</p>
+                <p style="margin-top: 0%; color: #271803">to refresh your brand, or need engaging content that</p>
+                <p style="margin-top: 0%; color: #271803">drives traffic and conversions — I’ve got the tools and</p>
+                <p style="margin-top: 0%; color: #271803;">creativity to bring your vision to life.</p>
+                <button class="hello" style="margin-top: 5%">Say Hello</button>
+            </div>
+            <div class="about_button">
+                <div class="about_tag">
+                    <h4>7 Y.</h4>
+                    <p>Experience</p>
+                </div>
+                <div class="about_tag">
+                    <h4>103</h4>
+                    <p>Project Completed</p>
+                </div>
+                <div class="about_tag">
+                    <h4>35</h4>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img class="image_2" src="./images/pic2.jpg">
+        </div>
+    </div>
+    <!--<About2> Scection-->
+    <div class="about2">
+        <div>
+            <img class="image_1" src="./images/pic1.jpg">
+            <div class="icon">
+                <img src="./images/icon2.png" width="45vw" height="45vh">
+                <img src="./images/icon3.png" width="45vw" height="45vh">
+                <img src="./images/icon4.png" width="45vw" height="45vh">
+                <img src="./images/icon5.png" width="45vw" height="45vh">
+            </div>
+        </div>
+        <div class="about2_head">
+            <h2 style="margin: 0%; color: #271803;">I am a professional SMM,</h2>
+            <h2 style="margin: 0%; color: #271803;">Graphics Designer,</h2>
+            <h3 style="margin: 0%; color: #271803;">and Video Editor</h3>
+            <p style="margin: 5% 0% 0% 0%; color: #271803;">with a passion for creating visually compelling content</p>
+            <p style="margin: 0%; color: #271803;">that captures attention and drives results.</p>
+            <p style="margin: 0%; color: #271803;">From eye-catching designs to engaging videos and</p>
+            <p style="margin: 0%; color: #271803;">strategic social media management, I help brands tell their</p>
+            <p style="margin: 0% 0% 5% 0%; color: #271803;">stories and connect with their audience effectively. </p>
+            <div class="about2_button">
+                <button class="projectbutton1">My Project</button>
+                <div class="about2_button1">
+                    <button class="projectbutton">
+                        <img src="./images/icon1.png" width="50vw" height="45vh">
+                        <p>Download CV</p>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Workprocess section-->
+    <div class="workprocess">
+        <div class="workprocess_h">
+            <h2>Work Process</h2>
+            <p>As a freelancer, delivering high-quality and effective</p>
+            <p>results starts with a structured, strategic workflow. My</p>
+            <p>process is designed to ensure clarity, creativity, and measurable</p>
+            <p>impact at every stage of the project.</p>
+        </div>
+        <div class="work_grid">
+            <div class="workgrid1">
+                <div class="research">
+                   <img src="./images/research.png" width="40vw" height="40vh" style="margin: 4% 0% 0% 5%;">
+                   <h3 style="margin: 4% 0% 0% 5%; color: #271803;">1. Research</h3>
+                   <p style="margin: 4% 0% 0% 5%; font-size: 0.7rem; font: verdana; color: bisque;">Gather all necessary information to</p>
+                   <p style="margin: 0% 0% 0% 5%; font-size: 0.7rem; font: verdana; color: bisque;">understand the client’s needs, goals,</p>
+                   <p style="margin: 0% 0% 5% 5%; font-size: 0.7rem; font: verdana; color: bisque;">target audience, and industry context.</p>
+                </div>
+                <div class="analyze">
+                   <img src="./images/analyze.png" width="40vw" height="40vh" style="margin: 4% 0% 0% 5%;">
+                   <h3 style="margin: 4% 0% 0% 5%; color: #271803;">2. Analyze</h3>
+                   <p style="margin: 4% 0% 0% 5%; font-size: 0.7rem; font: verdana; color: bisque;">Identify patterns, opportunities, and</p>
+                   <p style="margin: 0% 0% 0% 5%; font-size: 0.7rem; font: verdana; color: bisque;">challenges. Define the project scope and</p>
+                   <p style="margin: 0% 0% 5% 5%; font-size: 0.7rem; font: verdana; color: bisque;">key deliverables</p>
+                </div>
+            </div>
+            <div class="workgrid2">
+                <div class="design">
+                   <img src="./images/design.png" width="40vw" height="40vh" style="margin: 4% 0% 0% 5%;">
+                   <h3 style="margin: 4% 0% 0% 5%; color: #271803;">3. Design</h3>
+                   <p style="margin: 4% 0% 0% 5%; font-size: 0.7rem; font: verdana; color: bisque;">Start designing the actual solution,</p>
+                   <p style="margin: 0% 0% 0% 5%; font-size: 0.7rem; font: verdana; color: bisque;">be it a visual concept, written content</p>
+                   <p style="margin: 0% 0% 5% 5%; font-size: 0.7rem; font: verdana; color: bisque;"> a product prototype, or a digital asset.</p>
+                </div>
+                <div class="launch">
+                   <img src="./images/launch.png" width="40vw" height="40vh" style="margin: 4% 0% 0% 5%;">
+                   <h3 style="margin: 4% 0% 0% 5%; color: #271803;">4. Launch</h3>
+                   <p style="margin: 4% 0% 0% 5%; font-size: 0.7rem; font: verdana; color: bisque;">Finalize the work and prepare for</p>
+                   <p style="margin: 0% 0% 0% 5%; font-size: 0.7rem; font: verdana; color: bisque;">launch or delivery.</p>
+                   <p style="margin: 0% 0% 5% 5%; font-size: 0.7rem; font: verdana; color: bisque;">Quality checks and final revisions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Portfolio section-->
+    <section class="portfolio">
+        <div class="portfolio1">
+            <h2 style="color: #271803;">Porfolio</h2>
+            <p style="margin-bottom: 0%;">These are many variations of passages</p>
+            <p style="margin: 0%;">but are not limited to...</p>
+        </div>
+        <div class="box">
+            <div class="grid1">
+                <div class="grid1_box" style="background-color: #271803;">
+                    <img class="portfolio_image" src="./images/logo1.png">
+                    <div class="box1">
+                        <p>Graphics design</p>
+                        <h4>Social Media Logo</h4>
+                        <p>Briefing of what the logo entails</p>
+                        <div class="case_button">
+                            <button class="casebutton">Case Study</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1_box" style="background-color: #271803;">
+                    <img class="portfolio_image" src="./images/logo2.png">
+                    <div class="box1">
+                        <p>Graphics design</p>
+                        <h4>Social Media Logo</h4>
+                        <p>Briefing of what the logo entails</p>
+                        <div class="case_button">
+                            <button class="casebutton">Case Study</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1_box" style="background-color: #271803;">
+                    <img class="portfolio_image" src="./images/logo3.png">
+                    <div class="box1">
+                        <p>Graphics design</p>
+                        <h4>Social Media Logo</h4>
+                        <p>Briefing of what the logo entails</p>
+                        <div class="case_button">
+                            <button class="casebutton">Case Study</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid2">
+                <div class="grid1_box" style="background-color: #271803;">
+                    <img class="portfolio_image" src="./images/logo3.png">
+                    <div class="box1">
+                        <p>Graphics design</p>
+                        <h4>Social Media Logo</h4>
+                        <p>Briefing of what the logo entails</p>
+                        <div class="case_button">
+                            <button class="casebutton">Case Study</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1_box" style="background-color: #271803;">
+                    <img class="portfolio_image" src="./images/logo1.png">
+                    <div class="box1">
+                        <p>Graphics design</p>
+                        <h4>Social Media Logo</h4>
+                        <p>Briefing of what the logo entails</p>
+                        <div class="case_button">
+                            <button class="casebutton">Case Study</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid1_box" style="background-color: #271803;">
+                    <img class="portfolio_image" src="./images/logo2.png">
+                    <div class="box1">
+                        <p>Graphics design</p>
+                        <h4>Social Media Logo</h4>
+                        <p>Briefing of what the logo entails</p>
+                        <div class="case_button">
+                            <button class="casebutton">Case Study</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more_button">
+            <button class="more">More Projects</button>
+        </div>
+    </section>
+    <!--Let's work together section-->
+    <div>
+        <h2>Do you have any project idea?</h2>
+        <h2>Let's discuss your project</h2>
+        <p>These are many variation of projects</p>
+        <p>but not limited to...</p>
+        <button>
+            Lets Work Together
+            <img/>
+        </button>
+    </div>
+    <!--Blog section-->
+    <section>
+        <h2>Blog</h2>
+        <p>These are many variations</p>
+        <p>but not limited to...</p>
+        <div>
+            <div>
+                <img/>
+                <p>20th Oct, 2019/150 comments</p>
+                <p>Lorem ipsum dolo..</p>
+                <p>Lorem ipsum dolo..</p>
+            </div>
+             <div>
+                <img/>
+                <p>20th Oct, 2019/150 comments</p>
+                <p>Lorem ipsum dolo..</p>
+                <p>Lorem ipsum dolo..</p>
+            </div>
+             <div>
+                <img/>
+                <p>20th Oct, 2019/150 comments</p>
+                <p>Lorem ipsum dolo..</p>
+                <p>Lorem ipsum dolo..</p>
+            </div>
+             <div>
+                <img/>
+                <p>20th Oct, 2019/150 comments</p>
+                <p>Lorem ipsum dolo..</p>
+                <p>Lorem ipsum dolo..</p>
+            </div>
+            <button>More</button>
+        </div>
+    </section>
+    <!--what i do section-->
+    <div>
+        <div>
+            <h2>What I Do?</h2>
+            <p>Lorem</p>
+            <p>ipsum</p>
+            <p>dolo..</p>
+            <p>......</p>
+            <div>
+                <p>lorem ipsum</p>
+                <p>Lorem ipsum</p>
+            </div>
+            <div>
+                <button>Say Hello!</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>Graphics Design(GD)</h3>
+                <p>I am a</p>
+                <p>profesional in designing</p>
+                <p>graphics.</p>
+            </div>
+            <div>
+                <h3>Social Media Manager(SMM)</h3>
+                <p>I am a</p>
+                <p>profesional in designing</p>
+                <p>graphics.</p>
+            </div>
+            <div>
+                <h3>Video Editor(VE)</h3>
+                <p>I am a</p>
+                <p>profesional in designing</p>
+                <p>graphics.</p>
+            </div>
+        </div>
+    </div>
+    <!--Happy clients Section-->
+    <div>
+        <h2>Happy Clients</h2>
+        <p>These are many variations</p>
+        <p>but not limited to</p>
+        <div>
+            <div>
+                <img/>
+            </div>
+             <div>
+                <img/>
+            </div>
+             <div>
+                <img/>
+            </div>
+             <div>
+                <img/>
+            </div>
+             <div>
+                <img/>
+            </div>
+             <div>
+                <img/>
+            </div>
+        </div>
+    </div>
+    <!--Testimonial Section-->
+    <div>
+        <h2>Testimonials</h2>
+        <p>add clients feedback</p>
+        <div>
+            <div>
+                <h5>Clients name</h5>
+                <p>add feedback</p>
+            </div>
+            <div>
+                <h5>Clients name</h5>
+                <p>add feedback</p>
+            </div>
+            <div>
+                <h5>Clients name</h5>
+                <p>add feedback</p>
+            </div>
+            <div>
+                <h5>Clients name</h5>
+                <p>add feedback</p>
+            </div>
+        </div>
+        <div>
+            <button>More</button>
+        </div>
+    </div>
+    <!--Footer section-->
+    <footer>
+        <div>
+            <div>
+                <img>
+            </div>
+            <div>
+                <div>
+                    <p>Home</p>
+                </div>
+                <div>
+                    <p>Home</p>
+                </div>
+                <div>
+                    <p>About</p>
+                </div>
+                <div>
+                    <p>Services</p>
+                </div>
+                <div>
+                    <p>Process</p>
+                </div>
+                <div>
+                    <p>Portfolio</p>
+                </div>
+                <div>
+                    <p>Blog</p>
+                </div>
+                <di>
+                    <p>Contact</p>
+                </di>
+            </div>
+            <div>
+                <p>© 2025 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
