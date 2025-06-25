@@ -111,7 +111,6 @@
             padding: 5% 0% 5% 5%;
             display: flex;
             height: 60vh;
-            border-radius: 0% 0% 3% 3%;
         }
         .image_1{
             width: 30vw;
@@ -172,7 +171,6 @@
             margin: 0.7% 10% 0% 10%;
             padding: 2% 5% 2% 5%;
             display: flex;
-            border-radius: 4%;
             height: 50vh;
         }
         .workprocess_h{
@@ -224,7 +222,6 @@
             background-color: bisque;
             margin: 0.7% 10% 0% 10%;
             padding: 2% 0% 2% 0%;
-            border-radius: 3%;
         }
         .grid1{
             display:grid;
@@ -250,7 +247,7 @@
         }
         .portfolio1 p{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 1rem;
+            font-size: 0.8rem;
             text-align: center;
         }
         .portfolio_image{
@@ -298,6 +295,67 @@
             font-weight: bold;
             border-radius: 10%;
             border-style: none;
+        }
+        .work{
+            margin: 0.7% 10% 0% 10%;
+            padding: 2% 0% 5% 5%;
+            height: 26vh;
+        }
+        .work h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+            padding: 0%;
+            margin: 0%;
+            text-align: center;
+            color: bisque;
+        }
+        .work p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            text-align: center;
+            color: bisque;
+        }
+        .workbutton{
+            margin: 3% 0% 0% 42%;
+            width: 13vw;
+            height: 8vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            background-color: bisque;
+            color: #271803;
+        }
+        .blog{
+            background-color: bisque;
+            margin: 0.7% 10% 0% 10%;
+            padding: 2% 0% 5% 5%;
+            height: 50vh;
+        }
+        .blog_ h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3rem;
+            padding: 0%;
+            margin: 0%;
+            text-align: center;
+            color: #271803;
+        }
+        .blog_ p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            text-align: center;
+            color: #271803;
+            font-size: 0.8rem;
+        }
+        .blog_grid{
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:10px;
+            padding:0% 2% 0% 2%;
+            margin: 2% 0% 2% 0%;
+        }
+        .blog_img{
+            width: 15vw;
+            height: 20vh;
+            object-fit: cover;
         }
     </style>
     <meta charset="UTF-8">
@@ -453,8 +511,10 @@
     <section class="portfolio">
         <div class="portfolio1">
             <h2 style="color: #271803;">Porfolio</h2>
-            <p style="margin-bottom: 0%;">These are many variations of passages</p>
-            <p style="margin: 0%;">but are not limited to...</p>
+            <p style="margin-bottom: 0%;">A results-driven and detail-oriented professional with a passion for delivering excellence. This portfolio</p>
+            <p style="margin: 0%;">showcases a range of projects and experiences across hair styling, fashion, real estate, content creation and education,</p>
+            <p style="margin: 0%;">highlighting creativity, skill, and a strong commitment to client satisfaction. Each work reflects a blend of </p>
+            <p style="margin: 0%;"> innovation, functionality, and purposeful execution—designed to meet real needs and leave a lasting impact.</p>
         </div>
         <div class="box">
             <div class="grid1">
@@ -533,48 +593,49 @@
         </div>
     </section>
     <!--Let's work together section-->
-    <div>
+    <div class="work">
         <h2>Do you have any project idea?</h2>
         <h2>Let's discuss your project</h2>
-        <p>These are many variation of projects</p>
-        <p>but not limited to...</p>
-        <button>
+        <p style="margin: 3% 0% 0% 0%">From concept to completion, I’m here to help you every step of the way.</p>
+        <p style="margin: 0%">Let’s make it happen!</p>
+        <button class="workbutton">
             Lets Work Together
-            <img/>
         </button>
     </div>
     <!--Blog section-->
-    <section>
-        <h2>Blog</h2>
-        <p>These are many variations</p>
-        <p>but not limited to...</p>
-        <div>
-            <div>
-                <img/>
-                <p>20th Oct, 2019/150 comments</p>
-                <p>Lorem ipsum dolo..</p>
-                <p>Lorem ipsum dolo..</p>
-            </div>
-             <div>
-                <img/>
-                <p>20th Oct, 2019/150 comments</p>
-                <p>Lorem ipsum dolo..</p>
-                <p>Lorem ipsum dolo..</p>
-            </div>
-             <div>
-                <img/>
-                <p>20th Oct, 2019/150 comments</p>
-                <p>Lorem ipsum dolo..</p>
-                <p>Lorem ipsum dolo..</p>
-            </div>
-             <div>
-                <img/>
-                <p>20th Oct, 2019/150 comments</p>
-                <p>Lorem ipsum dolo..</p>
-                <p>Lorem ipsum dolo..</p>
-            </div>
-            <button>More</button>
+    <section class="blog">
+        <div class="blog_">
+            <h2>Blog</h2>
+            <p style="margin: 2% 0% 0% 0%">Latest updates, insights, and stories, behind the scenes,</p>
+            <p style="margin: 0%">lessons learned, and ideas worth sharing — all in one place.</p>
         </div>
+        <div class="blog_grid">
+            <div>
+                <img class="blog_img" src="./images/blog1.png"/>
+                <p>20th Oct, 2019/150 comments</p>
+                <p>Lorem ipsum dolo..</p>
+                <p>Lorem ipsum dolo..</p>
+            </div>
+             <div>
+                <img class="blog_img" src="./images/blog2.png"/>
+                <p>20th Oct, 2019/150 comments</p>
+                <p>Lorem ipsum dolo..</p>
+                <p>Lorem ipsum dolo..</p>
+            </div>
+             <div>
+                <img class="blog_img" src="./images/blog3.png"/>
+                <p>20th Oct, 2019/150 comments</p>
+                <p>Lorem ipsum dolo..</p>
+                <p>Lorem ipsum dolo..</p>
+            </div>
+             <div>
+                <img class="blog_img" src="./images/blog4.png"/>
+                <p>20th Oct, 2019/150 comments</p>
+                <p>Lorem ipsum dolo..</p>
+                <p>Lorem ipsum dolo..</p>
+            </div>
+        </div>
+        <button>More</button>
     </section>
     <!--what i do section-->
     <div>
